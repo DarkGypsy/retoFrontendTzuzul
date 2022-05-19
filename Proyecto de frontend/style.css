@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+  }
+  header {
+    background: #b4e1f6;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  #cabecera {
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+  }
+  header h1 {
+    font-family: NewYork;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 15px;
+  }
+  
+  header .navMenu {
+    padding-top: 10px;
+  }
+  
+  .navMenu #Contenedor {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 5px;
+  }
+  .navMenu li {
+    padding: 5px;
+  }
+  
+  .navMenu li a {
+    text-decoration: none;
+    color: #c789bc;
+    font-weight: bold;
+  }
+
+  .navMenu li a:hover {
+    border-bottom: solid 2px #c789bc;
+  }
+  .navMenu .subMenu_2 {
+    display: none;
+    text-decoration: none;
+    list-style: none;
+  }
+  .navMenu li a:hover + ul,
+  .navMenu li ul:hover {
+    display: block;
+  }
+  
+  section {
+    text-align: justify;
+    margin: 10px;
+  }
+  footer {
+    background: #c789bc;
+    padding: 10px;
+  }
+  footer h5,
+  footer p {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer .contenedorFooter {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer section ul {
+    list-style: none;
+  }
+  footer section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  footer section ul li {
+    padding: 5px;
+  }
+
+  /*Menú de login*/
+
+  .loginBody {
+    background: url(./media/floresCerezo.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0%;
+}
+
+  body #loginMenu{
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 10px;
+      background: #c789bc;
+      height: 500px;
+      border-radius: 3%;
+      opacity: 80%;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  body #loginMenu a {
+    text-decoration: none;
+    color: black;
+    opacity: 100%;
+  }
+  body #loginMenu input {
+    font-size: 18px;
+    padding: 5px;
+    height: 35px;
+    width: 200px;
+  }
+  body #loginMenu #btn_login {
+      border-radius: 40%;
+      width: 150px;
+      height: 40px;
+      background: #b4e1f6;
+      font-weight: bolder;
+      border: #ffffff 2px solid;
+      margin-bottom: 20px;
+  }
+  body .florAzulLogin {
+      margin-top: 60px;
+      width: 130px;
+      opacity: 100%;
+  }
+
+  /*#loginMenu #password + #usuario {
+   
+  } * /
+
+  /* Estilo de Registro */
+
+  .registroBody {
+    background: url(./media/registro.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0%;
+}
+
+  body #registro{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    background: #c789bc;
+    height: 600px;
+    border-radius: 3%;
+    opacity: 80%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+body #registro input {
+  font-size: 18px;
+  padding: 5px;
+  height: 30px;
+  width: 200px;
+}
+
+body #registro .btn_registrarse {
+    border-radius: 40%;
+    width: 150px;
+    height: 40px;
+    background: #b4e1f6;
+    font-weight: bolder;
+    border: #ffffff 2px solid;
+    margin-bottom: 20px;
+}
+body .florAzulLogin {
+    margin-top: 20px;
+    width: 130px;
+    opacity: 100%;
+}
+
+
+
+/*Pagina en Construccion */
+
+body #construc{
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  background: #c789bc;
+  height: 500px;
+  border-radius: 3%;
+  opacity: 80%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.construcBody {
+  background: url(./media/paginaenconstruc.jpg) no-repeat center fixed;
+  background-size: cover;
+  margin: 0%;
+}
+
+
+/*Contactanos*/
+.contactanosBody {
+  background: url(./media/contactanos.jpg) no-repeat center fixed;
+  background-size: cover;
+  margin: 0%;
+}
+
+body #formContac{
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  background: #c789bc;
+  height: 500px;
+  border-radius: 3%;
+  opacity: 80%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+body #formContac textarea{
+  resize: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+body #formContac input {
+  font-size: 18px;
+  padding: 5px;
+  height: 35px;
+  width: 295px;
+}
+
+body #formContac .btn_enviar {
+  border-radius: 40%;
+  background: #b4e1f6;
+  font-weight: bolder;
+  border: #ffffff 2px solid;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
+}
+
+/*Escribenos */
+body .muro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .muro ul{
+  margin: 20px;
+  list-style: none;
+}
+body .muro ul li{
+  border: #b4e1f6 1px solid;
+  background: #c789bc;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+body .muro #textbox {
+  resize: none;
+  padding: 5px;
+  font-size: 16px;
+}
+body .muro #btn_postear{
+  border-radius: 40%;
+  background: #b4e1f6;
+  font-weight: bolder;
+  border: #ffffff 2px solid;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+}
