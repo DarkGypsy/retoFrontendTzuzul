@@ -60,8 +60,19 @@
   }
   
   section {
-    text-align: justify;
+    
     margin: 10px;
+  }
+  body article {
+    margin: 5px;
+    display: inline-block;
+  }
+ 
+  body article img {
+    width: 300px;
+    float: right;
+  
+    
   }
   footer {
     background: #c789bc;
@@ -109,25 +120,38 @@
       row-gap: 10px;
       background: #c789bc;
       height: 500px;
-      border-radius: 3%;
+      border-radius: 16px;
       opacity: 80%;
       font-weight: bold;
       margin-bottom: 10px;
       margin-top: 10px;
   }
+
   body #loginMenu a {
     text-decoration: none;
     color: black;
     opacity: 100%;
   }
+
+  body #loginMenu a:hover {
+    color: #b4e1f6;
+  }
+
   body #loginMenu input {
     font-size: 18px;
     padding: 5px;
     height: 35px;
     width: 200px;
+    outline: none;
+    transition: .5s;
   }
+  body #loginMenu input:focus {
+    border-color: #b4e1f6;
+    box-shadow: 0 0 8px 0 #b4e1f6;
+  }
+
   body #loginMenu #btn_login {
-      border-radius: 40%;
+      border-radius: 16px;
       width: 150px;
       height: 40px;
       background: #b4e1f6;
@@ -135,15 +159,15 @@
       border: #ffffff 2px solid;
       margin-bottom: 20px;
   }
+  body #loginMenu #btn_login:hover {
+    background: #c789bc;
+  }
   body .florAzulLogin {
       margin-top: 60px;
       width: 130px;
       opacity: 100%;
   }
 
-  /*#loginMenu #password + #usuario {
-   
-  } * /
 
   /* Estilo de Registro */
 
@@ -164,7 +188,7 @@
     row-gap: 10px;
     background: #c789bc;
     height: 600px;
-    border-radius: 3%;
+    border-radius: 16px;
     opacity: 80%;
     font-weight: bold;
     margin-bottom: 10px;
@@ -175,10 +199,16 @@ body #registro input {
   padding: 5px;
   height: 30px;
   width: 200px;
+  outline: none;
+  transition: .5s;
+}
+body #registro input:focus {
+  border-color: #b4e1f6;
+  box-shadow: 0 0 8px 0 #b4e1f6;
 }
 
 body #registro .btn_registrarse {
-    border-radius: 40%;
+    border-radius: 16px;
     width: 150px;
     height: 40px;
     background: #b4e1f6;
@@ -186,6 +216,11 @@ body #registro .btn_registrarse {
     border: #ffffff 2px solid;
     margin-bottom: 20px;
 }
+
+body #registro .btn_registrarse:hover {
+  background: #c789bc;
+}
+
 body .florAzulLogin {
     margin-top: 20px;
     width: 130px;
@@ -207,7 +242,7 @@ body #construc{
   row-gap: 10px;
   background: #c789bc;
   height: 500px;
-  border-radius: 3%;
+  border-radius: 16px;
   opacity: 80%;
   font-weight: bold;
   margin-bottom: 10px;
@@ -239,7 +274,7 @@ body #formContac{
   row-gap: 10px;
   background: #c789bc;
   height: 500px;
-  border-radius: 3%;
+  border-radius: 16px;
   opacity: 80%;
   font-weight: bold;
   margin-bottom: 10px;
@@ -249,6 +284,12 @@ body #formContac textarea{
   resize: none;
   padding: 5px;
   font-size: 16px;
+  outline: none;
+  transition: .5s;
+}
+body #formContac textarea:focus {
+  border-color: #b4e1f6;
+  box-shadow: 0 0 8px 0 #b4e1f6;
 }
 
 body #formContac input {
@@ -256,16 +297,26 @@ body #formContac input {
   padding: 5px;
   height: 35px;
   width: 295px;
+  outline: none;
+  transition: .5s;
+}
+body #formContact input:focus {
+  border-color: #b4e1f6;
+  box-shadow: 0 0 8px 0 #b4e1f6;
 }
 
 body #formContac .btn_enviar {
-  border-radius: 40%;
+  border-radius: 16px;
   background: #b4e1f6;
   font-weight: bolder;
   border: #ffffff 2px solid;
   margin-bottom: 20px;
   width: 150px;
   height: 40px;
+}
+
+body #formContac .btn_enviar:hover {
+  background: #c789bc;
 }
 
 /*Escribenos */
@@ -286,16 +337,22 @@ body .muro ul li{
   width: 300px;
   text-align: center;
   margin: 5px;
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 body .muro #textbox {
   resize: none;
   padding: 5px;
   font-size: 16px;
+  outline: none;
+  transition: .5s;
+}
+body .muro textarea:focus {
+  border-color: #b4e1f6;
+  box-shadow: 0 0 8px 0 #b4e1f6;
 }
 body .muro #btn_postear{
-  border-radius: 40%;
+  border-radius: 16px;
   background: #b4e1f6;
   font-weight: bolder;
   border: #ffffff 2px solid;
@@ -303,4 +360,11 @@ body .muro #btn_postear{
   width: 150px;
   height: 40px;
   margin-top: 10px;
+}
+body .muro #btn_postear:focus {
+  border-color: #b4e1f6;
+  box-shadow: 0 0 8px 0 #b4e1f6;
+}
+body .muro #btn_postear:hover {
+  background: #c789bc;
 }
