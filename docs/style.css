@@ -65,12 +65,15 @@
   }
   body article {
     margin: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: inline-block;
   }
  
   body article img {
     width: 300px;
     float: right;
+    margin-right: 20px;
   
     
   }
